@@ -1,6 +1,5 @@
 @ECHO OFF
 REM ------------------ Begin of section to fill in -----------------------------
-SET nir="D:\Eigene Programme\Nircmd\nircmd.exe"
 SET x="D:\Eigene Programme\Tools\Batch\FFMPEG\youtube-dl.exe"
 SET xx="D:\Eigene Programme\Internet\MediathekView_6\bin\ffmpeg.exe"
 SET mi="D:\Eigene Programme\Grafik\MediaInfo_CLI_0.7.72_Windows_x64\MediaInfo.exe"
@@ -9,19 +8,8 @@ SET opts=%optsnodate% --dateafter 20200505
 SET optsnodate=%optsnodate% --exec "COPY /b {} +,,"
 REM ------------------- End of section to fill in ------------------------------
 
-%nir% win setsize foreground 5 5 500 500
-mode 140,80
-REM mode con: lines=2500
-REM mode con: cols=%1 lines=%2
-powershell -command "&{$H=get-host;$W=$H.ui.rawui;$B=$W.buffersize;$B.width=140;$B.height=20000;$W.buffersize=$B;}"
-
-REM IF "%~1"=="" ECHO missing input file name!
-REM IF "%~1"=="" GOTO END
-
-DEL map.txt > NUL 2> NUL
-
 REM So this batch can be started giving an UNC source file:
-CD /D "%~dp0"
+REM CD /D "%~dp0"
 chcp 1252
 
 REM This to have those !vars! at hand which aren't preset outside loops:
