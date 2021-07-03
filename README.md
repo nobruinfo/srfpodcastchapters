@@ -16,8 +16,9 @@ Progess mainly community driven. Let's see whether SRF audience reacts on it.
 
 You need to add certain tools to your folder structure and then modify path references within the
 script:
-- Optional: [Nircmd](https://www.nirsoft.net/utils/nircmd.html), scroll all the way down to find the
-  download there. This only makes the command line window bigger.
+- Optional: ~~[Nircmd](https://www.nirsoft.net/utils/nircmd.html), scroll all the way down to find the
+  download there. This only makes the command line window bigger.~~
+  This has been removed on July 3 2021.
 - [FFMpeg](https://github.com/BtbN/FFmpeg-Builds/releases) or from another maintainer. If not sure
   on what type of graphics card you have simply use a link with a short name without "vulkan" or so.
   FFMpeg makes the conversion and allows chapter meta tags within the m4a file.
@@ -35,6 +36,9 @@ Rest of paths and options are not used/not relevant for the use. They will be re
 of testing.
 
 ## changelog
+
+**July 3 2021** Removed resizing the console window (nircmd and powershell lines) since this script
+is mainly called by a wrapper doing such stuff.
 
 **March 14 2021** In this version a fix had to ensure lines of the pod description begins with an
 opening bracket. Before additional texts such as links to this site here lead to generation of fake
