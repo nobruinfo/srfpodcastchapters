@@ -37,6 +37,8 @@ of testing.
 
 ## changelog
 
+**June 18 2022** Filenames containing exclamation points (!) no longer fail mp3 to mp4 conversion.
+
 **July 3 2021** Removed resizing the console window (nircmd and powershell lines) since this script
 is mainly called by a wrapper doing such stuff.
 
@@ -48,3 +50,9 @@ Many lines of the initial script were deleted since they were left from a templa
 completely different origin.
 
 **March 10 2021** Initial draft
+
+## known limitations
+
+* Changes of the naming/link convention within RSS podcast feed lead to a complete re-download of
+  all listed episodes. This is a set fact by the podcast's issuer and might also be an issue on
+  other podcast client software.
