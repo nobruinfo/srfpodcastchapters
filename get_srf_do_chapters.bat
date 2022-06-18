@@ -4,7 +4,7 @@ SET x="D:\Eigene Programme\Tools\Batch\FFMPEG\youtube-dl.exe"
 SET xx="D:\Eigene Programme\Internet\MediathekView_6\bin\ffmpeg.exe"
 SET mi="D:\Eigene Programme\Grafik\MediaInfo_CLI_0.7.72_Windows_x64\MediaInfo.exe"
 SET optsnodate=--download-archive archiv.ini --max-downloads 10 --cookies cookies.txt
-SET opts=%optsnodate% --dateafter 20200505
+SET opts=%optsnodate% --dateafter 20200505 --restrict-filenames
 SET optsnodate=%optsnodate% --exec "COPY /b {} +,,"
 REM ------------------- End of section to fill in ------------------------------
 
