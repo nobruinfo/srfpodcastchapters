@@ -19,7 +19,9 @@ REM If you want to directly save downloades podcast files to somewhere else:
 REM CD /D W:\aaaaa
 
 TITLE SRF Digital:
-%x% %opts% --write-description http://podcasts.srf.ch/digital_plus_mpx.xml
+SET url=http://podcasts.srf.ch/digital_plus_mpx.xml
+SET url=https://www.srf.ch/feed/podcast/sd/400741a5-0289-474b-807c-01679a6986c0.xml
+%x% %opts% --write-description %url%
 
 REM Loop all description files:
 FOR /R . %%F in (*.description) do (
